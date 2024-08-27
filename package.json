@@ -1,0 +1,19 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "main.js",
+  "author": "Jane Doe",
+  "license": "MIT",
+  "packageManager": "yarn@4.3.1",
+  "devDependencies": {
+    "electron": "^32.0.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.33.0",
+    "cross-fetch": "^4.0.0"
+  }
+}
