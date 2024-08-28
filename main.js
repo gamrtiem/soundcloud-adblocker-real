@@ -1,10 +1,15 @@
 // main.js
-
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 // Modules to control application life and create native browser window
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('node:path')
-const { ElectronBlocker, fullLists, Request } = require('@cliqz/adblocker-electron')
-const fetch = require('cross-fetch')
+const adblocker_electron_1 = require("@cliqz/adblocker-electron");
+const cross_fetch_1 = __importDefault(require("cross-fetch"));
+const fs_1 = require("fs");
+
 
 
 async function createWindow() {  // Create the browser window.
@@ -12,18 +17,30 @@ async function createWindow() {  // Create the browser window.
     width: 1200,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      webviewTag: true,
+      webSecurity: false, //scary !
+      additionalArguments: [`--customValue=${path.join(__dirname, 'main.css')}`],
     }
   })
 
-  const blocker = await ElectronBlocker.fromPrebuiltAdsAndTracking(fetch); // ads and tracking
+  const blocker = await adblocker_electron_1.ElectronBlocker.fromLists(cross_fetch_1.default, adblocker_electron_1.fullLists, {
+    enableCompression: true,
+  }, {
+    path: 'engine.bin',
+    read: async (...args) => (0, fs_1.readFileSync)(...args),
+                                                                       write: async (...args) => (0, fs_1.writeFileSync)(...args),
+  });
+  blocker.enableBlockingInSession(mainWindow.webContents.session);
 
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  //mainWindow.loadFile('index.html')
+
+  mainWindow.loadURL('https://soundcloud.com');
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
@@ -48,3 +65,4 @@ app.on('window-all-closed', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
