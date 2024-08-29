@@ -1,18 +1,267 @@
-body {
-    margin: 0px !important;
-    background-color: #453324 !important;
+/*i <3 upsale !!*/
+.sc-classic .banner.m-alert {
+    display: none !important;
+}
 
-}
-#webview {
-    position:fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-iframe {
-    height: 100% !important;
-    width: 10px !important;
-}
+/* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
+    color: #eeeeee !important
+}
+.l-container.l-content, .sc-classic .l-container.l-content {
+    background-color: #1d1d1d !important
+}
+a.sc-link-dark, a:hover {
+    color: #F3D2F7 !important
+}
+a.sc-link-dark:hover, a.sc-link-medium:hover {
+    color: #E382C9 !important
+}
+.sc-classic .mixedSelectionModule {
+    border-bottom: #2d2d2d !important
+}
+
+.sc-border-light-right {
+    border-right: #2d2d2d !important
+}
+.sc-border-light-bottom {
+    border-bottom: #2d2d2d !important
+}
+.sc-classic .header {
+    background: #2d2d2d !important
+}
+.sc-classic .header__link.header__goUpsell, .sc-classic .header__link.header__goUpsell_side_by_side_experience, .sc-classic .header__link.header__proUpsell_side_by_side_experience {
+    display:none !important
+}
+.sc-classic .header>li>a:focus, .sc-classic .header__navMenu>li>a.selected {
+    color: #1d1d1d !important
+}
+.sc-classic .dropbar__content {
+    background-color: #2d2d2d !important
+}
+.sc-classic .profileUploadFooter {
+    background-color: #2d2d2d !important
+}
+.sc-classic .g-tabs-link, .sc-classic .g-tabs-link:visited {
+    color: #eeeeee !important
+}
+.sc-button-next, .sc-button-pause, .sc-button-play, .sc-button-prev, .sc-button.sc-button-blocked, .sc-button.sc-button-play.sc-button-disabled:disabled, .sc-button.sc-button-play:disabled, .sc-button.sc-button-play:disabled:hover {
+    background-color: #F3D2F7 !important
+}
+.commentItem__body {
+    color: #eeeeee !important
+}
+.commentItem__creatorLink, .commentItem__creatorLink:hover, .commentItem__creatorLink:visited, .commentItem__username, .commentItem__usernameLink, .commentItem__usernameLink:hover, .commentItem__usernameLink:visited {
+    color: #eeeeee !important
+}
+.sc-classic .searchTitle {
+    background-color: #1d1d1d !important
+}
+.sc-classic .g-nav-item>.g-nav-link {
+    color: #eeeeee !important
+}
+.sc-classic .commentForm.visible .commentForm__wrapper {
+    background: #1d1d1d !important
+}
+.sc-classic .trackItem.active, .sc-classic .trackItem.hover {
+    background-color: #2d2d2d !important
+}
+.sc-classic .queue__itemWrapper {
+    background-color: #2d2d2d !important
+}
+.sc-classic .queue__panel {
+    background-color: #1d1d1d !important
+}
+.sc-classic .queueItemView.m-active, .sc-classic .queueItemView:hover {
+    background-color: #1d1d1d !important
+}
+.queueFallback {
+    background-color: #1d1d1d !important
+}
+.sc-classic .queue__dragCover, .sc-classic .queue__scrollable {
+    background-color: #1d1d1d !important
+}
+.sidebarModule:last-child {
+    display: none !important
+}
+.sc-classic .l-footer.standard {
+    display: none !important
+}
+.sc-classic .listenEngagement {
+    box-shadow: 0 0px 0 0 #f2f2f2 !important
+}
+.sc-classic .listenEngagement {
+    border: 0px solid #fff !important
+}
+.sc-classic .truncatedAudioInfo.m-overflow.m-collapsed .truncatedAudioInfo__wrapper:after {
+    background: linear-gradient(hsla(0, 0%, 100%, 0), hsl(0deg 0% 15.11% / 50%) 90%, #1d1d1d) !important
+}
+.sc-button-dropdown:not(.sc-button-disabled):not(:disabled) {
+    border: 1px solid #F3D2F7 !important
+}
+.sc-button-dropdown:not(.sc-button-disabled):not(:disabled) {
+    color: #F3D2F7 !important
+}
+.sc-button-dropdown:not(.sc-button-disabled):not(:disabled) {
+    background-color: #1d1d1d !important
+}
+.sc-classic .commentForm .commentForm__input {
+    background: #2d2d2d !important;
+}
+.sc-button-dropdown:after {
+    border-right: 1px solid #E382C9 !important;
+}
+.sc-button-dropdown:after {
+    border-bottom: 1px solid #E382C9 !important;
+}
+::-webkit-scrollbar {
+    color: #F3D2F7
+}
+::-webkit-scrollbar-thumb {
+    background: #F3D2F7
+}
+.playbackTimeline {
+    display: inline !important; position: relative !important; top: -48px !important; width: 100% !important ;
+}
+.playbackTimeline__timePassed {
+    position: relative !important; top: 35px !important; color: #F3D2F7 !important; left: -2.4% !important
+}
+.sc-classic .playbackTimeline__duration {
+    top: -44px !important;
+}
+.sc-classic .playbackTimeline__duration {
+    display: block !important; position: relative !important; color: #eeeeee !important; left: 98% !important;
+}
+.sc-classic .playbackTimeline__progressBar {
+    height: 5px !important; background-color: #F3D2F7 !important;
+}
+.sc-classic .playbackTimeline__progressHandle {
+    border: 5px solid #F3D2F7 !important; background-color: #F3D2F7 !important; margin-top: -2px !important;
+}
+.playControls__inner {
+    height: 80px !important
+}
+.sc-classic .playbackTimeline__progressBackground {
+    height: 5px !important; background-color: #eeeeee !important;
+}
+.sc-classic .playControls__timeline {
+    display: flex !important; position: absolute !important; width: 100% !important; height: 20px !important; top: -22px !important;
+}
+
+.sc-classic .playControl {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .skipControl__next {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .skipControl__previous {
+    margin-left: 25% !important; filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .shuffleControl:after, .sc-classic .shuffleControl:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .shuffleControl:after {
+    filter: opacity(0.1) drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9); !important
+}
+.sc-classic .repeatControl:after {
+    filter: opacity(0.1) drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9)drop-shadow(0 0 0 #E382C9); !important
+}
+.sc-classic .repeatControl:after, .sc-classic .repeatControl:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .repeatControl.m-none {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .volume[data-level="6"] .volume__button, .sc-classic .volume[data-level="7"] .volume__button, .sc-classic .volume[data-level="8"] .volume__button, .sc-classic .volume[data-level="9"] .volume__button, .sc-classic .volume[data-level="10"] .volume__button {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic  .volume__button {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7) !important;
+}
+.playbackSoundBadge__showQueue {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7)drop-shadow(0 0 0 #F3D2F7); !important
+}
+.sc-classic .playControls__bg, .sc-classic .playControls__inner {
+    background-color: #1d1d1d !important; border-top: 0px !important;
+}
+.sc-classic .volume__sliderWrapper {
+    border: 0px !important
+}
+.uiEvoButton--isLight.commentItem__likeButton {
+    background-color: #1d1d1d !important;
+}
+.commentItem__like .uiEvoButton--isLight.commentItem__likeButton:hover {
+    background-color: #2d2d2d !important;
+}
+.uiEvoButton.uiEvoButton--isIconOnly svg {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7);
+}
+.commentItem__timestampLink, .commentItem__timestampLink:hover, .commentItem__timestampLink:visited {
+    color: #F3D2F7 !important;
+    background-color: #2d2d2d !important;
+}
+
+.sc-button {
+    border: 1px solid #2d2d2d !important;
+    background-color: #1d1d1d !important;
+    color: #eeeeee !important;
+}
+.sc-button-cta, .sc-button-cta:focus, .sc-button-cta:hover, .sc-button-cta:visited, .sc-button.sc-button-white:focus, .sc-button.sc-button-white:hover {
+    background-color: #F3D2F7 !important;
+    border-color: #F3D2F7 !important;
+    color: #1d1d1d !important;
+}
+.sc-classic .soundBadge__additional {
+    background: linear-gradient(90deg,hsla(0,0%,100%,.1),#1d1d1d 17px);
+}
+
+.sc-button-small.sc-button-like:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee);
+}
+.sc-button-small.sc-button-selected.sc-button-like.sc-button-lightfg:before, .sc-button-small.sc-button-selected.sc-button-like.sc-button-visual:before, .sc-button-small.sc-button-selected.sc-button-like:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7);
+}
+.sc-classic .moreActions__button, .sc-classic .moreActions__link {
+    border-bottom: 1px solid #2d2d2d !important;
+    background-color: #1d1d1d !important;
+    color: #eeeeee !important;
+}
+.sc-classic .moreActions__button:not(:disabled), .sc-classic .moreActions__link { /*report button*/
+    background-color: #1d1d1d !important;
+}
+.sc-classic .moreActions__button:focus:not(:disabled), .sc-classic .moreActions__button:hover:not(:disabled), .sc-classic .moreActions__link:hover {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .moreActions__button.sc-button-medium:before, .sc-classic .moreActions__link.sc-button-medium:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee);
+}
+.sc-button-active.sc-button-focus, .sc-button-active:focus, .sc-button-active:hover, .sc-button-selected.sc-button-focus, .sc-button-selected:focus, .sc-button-selected:hover {
+    border: 1px solid #F3D2F7;
+}
+.sc-button-active, .sc-button-selected {
+    color: #F3D2F7 !important;
+}
+button, input, select, textarea {
+    color: #eeeeee !important;
+}
+a.sc-link-light {
+    color: #eeeeee !important;
+}
+.sc-classic .playbackSoundBadge__titleLink, .sc-classic .playbackSoundBadge__titleLink:visited {
+    color: #999 !important;
+}
+.sc-button-medium.sc-button-like:before, .sc-button-medium.sc-button-repost:before, .sc-button-medium.sc-button-share:before, .sc-button-medium.sc-button-copylink:before, .sc-button-queue:before, .sc-button-medium.sc-button-more:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee);
+}
+.sc-button-selected.sc-button-medium.sc-button-like:active:before, .sc-button-selected.sc-button-medium.sc-button-like:focus:before, .sc-button-medium.sc-button-selected.sc-button-follow:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7);
+}
+.sc-button-medium.sc-button-cta.sc-button-follow:before, .sc-button-small.sc-button-cta.sc-button-follow:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #1d1d1d) drop-shadow(0 0 0 #1d1d1d) drop-shadow(0 0 0 #1d1d1d) drop-shadow(0 0 0 #1d1d1d) drop-shadow(0 0 0 #1d1d1d);
+}
+.commentItem__replyButton, .commentItem__replyButton:hover, .commentItem__replyButton:visited {
+    color: #999 !important;
+}
+.sc-classic .commentForm__submitButton:disabled {
+    opacity: 1 !important;
 }
