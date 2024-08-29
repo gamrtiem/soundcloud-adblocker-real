@@ -142,7 +142,7 @@ a.sc-link-dark:hover, a.sc-link-medium:hover {
     height: 80px !important
 }
 .sc-classic .playbackTimeline__progressBackground {
-    height: 5px !important; background-color: #eeeeee !important;
+    height: 5px !important; background-color: #2d2d2d !important;
 }
 .sc-classic .playControls__timeline {
     display: flex !important; position: absolute !important; width: 100% !important; height: 20px !important; top: -22px !important;

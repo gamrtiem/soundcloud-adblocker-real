@@ -20,7 +20,7 @@ async function createWindow() {  // Create the browser window.
       preload: path.join(__dirname, 'preload.js'),
       webviewTag: true,
       webSecurity: false, //scary !
-      additionalArguments: [`--customValue=${path.join(__dirname, 'main.css')}`],
+      additionalArguments: [`--customValue=${path.join(__dirname, 'main.css')}`, `--customValue=${path.join(__dirname, 'soundcloudShuffleLikes.js')}`],
     }
   })
 
