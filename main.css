@@ -34,7 +34,8 @@ a.sc-link-dark:hover, a.sc-link-medium:hover {
     display:none !important
 }
 .sc-classic .header>li>a:focus, .sc-classic .header__navMenu>li>a.selected {
-    color: #1d1d1d !important
+    color: #F3D2F7 !important;
+    background-color: #1d1d1d !important;
 }
 .sc-classic .dropbar__content {
     background-color: #2d2d2d !important
@@ -264,4 +265,10 @@ a.sc-link-light {
 }
 .sc-classic .commentForm__submitButton:disabled {
     opacity: 1 !important;
+}
+.sc-classic .show .header__logo {
+    background: linear-gradient(#F3D2F7,#E382C9) !important;
+}
+.g-dark input[type=password], .g-dark input[type=search], .g-dark input[type=text], .g-dark select, .g-dark textarea {
+    background: #1d1d1d !important;
 }
