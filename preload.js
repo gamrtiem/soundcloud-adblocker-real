@@ -40,23 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
   //script.src = 'file://' + argValue3 + '/privacyRedirector.js';
   //head.appendChild(script);
 
-  console.log(getDir)
+  console.log(Dir)
 })
 
-window.addEventListener('DOMContentLoaded', async () => {
-  // manipulate DOM here
-
-  // adding css
-  //const head = document.getElementsByTagName('head')[0];
-  //const link = document.createElement('link');
-  //link.id = "AB";
-  //link.rel = 'stylesheet';
-  //link.type = 'text/css';
-  //link.href = 'main.css';
-
-  //link.media = 'all';
-  //head.appendChild(link);
-
-  // removing the current css
-  // here you can do whatever you want
-})
