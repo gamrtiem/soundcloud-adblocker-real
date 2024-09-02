@@ -20,9 +20,23 @@ async function createWindow() {  // Create the browser window.
       preload: path.join(__dirname, 'preload.js'),
       webviewTag: true,
       webSecurity: false, //scary !
+      webSecurity: false, //scary !
+      webSecurity: false, //scary !
+      webSecurity: false, //scary !
       additionalArguments: [`--customValue=${__dirname}`],
     }
   })
+
+
+
+
+  // and load the index.html of the app.
+  //mainWindow.loadFile('index.html')
+
+  mainWindow.loadURL('https://soundcloud.com');
+
+  // Open the DevTools.
+  //mainWindow.webContents.openDevTools()
 
   const blocker = await adblocker_electron_1.ElectronBlocker.fromLists(cross_fetch_1.default, adblocker_electron_1.fullLists, {
     enableCompression: true,
@@ -32,15 +46,6 @@ async function createWindow() {  // Create the browser window.
                                                                        write: async (...args) => (0, fs_1.writeFileSync)(...args),
   });
   blocker.enableBlockingInSession(mainWindow.webContents.session);
-
-
-  // and load the index.html of the app.
-  //mainWindow.loadFile('index.html')
-
-  mainWindow.loadURL('https://soundcloud.com');
-
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished

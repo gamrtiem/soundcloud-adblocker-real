@@ -1,7 +1,6 @@
 const getDir = process.argv.filter(p => p.indexOf("--customValue=") >= 0)[0];
 const Dir = getDir.substr(getDir.indexOf("=") + 1);
 
-
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
@@ -16,7 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const head = document.getElementsByTagName('head')[0];
   const body = document.getElementsByTagName('body')[0];
   const link = document.createElement('link');
-  const script = document.createElement('script');
   link.id = "customCSS";
   link.rel = 'stylesheet';
   link.type = 'text/css';
@@ -24,21 +22,20 @@ window.addEventListener('DOMContentLoaded', () => {
   link.media = 'all';
   head.appendChild(link);
 
-  script.id = "customJS";
-  script.type = 'text/javascript';
-  script.src = 'file://' + Dir + '/soundcloudShuffleLikes.js';
+  const script = document.createElement('script');
+  script.src = 'file:' + Dir + '/soundcloudShuffleLikes.js';
   head.appendChild(script);
 
-  const script2 = document.createElement('script');
-  script2.type = 'text/javascript';
-  script2.id = "customJS";
-  script2.src = 'file://' + Dir + '/playlistButtonsV3.js';
-  head.appendChild(script2);
+  //const script2 = document.createElement('script');
+  //script2.src = 'file:' + Dir + '/playlistButtonsV3.js';
+  //head.appendChild(script2);
 
 
 
   //script.src = 'file://' + argValue3 + '/privacyRedirector.js';
   //head.appendChild(script);
+
+
 
   console.log(Dir)
 })

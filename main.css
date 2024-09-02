@@ -2,7 +2,9 @@
 .sc-classic .banner.m-alert {
     display: none !important;
 }
-
+.firstUploadNudgeContainer {
+    display: none !important;
+}
 /* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
