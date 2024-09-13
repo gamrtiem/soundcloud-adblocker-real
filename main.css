@@ -5,6 +5,9 @@
 .firstUploadNudgeContainer {
     display: none !important;
 }
+.header__upsellWrapper left {
+    display: none !important;
+}
 /* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
@@ -315,4 +318,19 @@ a.sc-link-light {
 }
 .sc-classic .linkMenu__list {
     background-color: #2d2d2d;
+}
+.sc-classic .badgeList__item {
+    /* smaller icons for liked songs/library*/
+    width: 6.666% !important;
+}
+.sc-classic .playableTile__mainHeadingLike.sc-icon-like {
+    /* smaller heart icon */
+    width: 8px !important;
+    height: 8px !important;
+    background-size: 8px 8px !important;
+    margin-right: -1px !important;
+}
+.playableTile__usernameHeadingContainer {
+    /*hide artist name*/
+    display: none !important;
 }
