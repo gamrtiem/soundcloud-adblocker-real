@@ -5,7 +5,7 @@
 .firstUploadNudgeContainer {
     display: none !important;
 }
-.header__upsellWrapper left {
+.header__upsellWrapper {
     display: none !important;
 }
 /* personal theme stuff */
