@@ -8,6 +8,9 @@
 .header__upsellWrapper {
     display: none !important;
 }
+.sc-classic .banner.m-get_heard {
+    display: none !important;
+}
 /* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
@@ -333,4 +336,8 @@ a.sc-link-light {
 .playableTile__usernameHeadingContainer {
     /*hide artist name*/
     display: none !important;
+}
+.sc-classic .newItemBadge.newItems__some {
+    /* notif color */
+    background: #F3D2F7 !important;
 }
