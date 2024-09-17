@@ -1,6 +1,10 @@
 const getDir = process.argv.filter(p => p.indexOf("--customValue=") >= 0)[0];
 const Dir = getDir.substr(getDir.indexOf("=") + 1);
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
@@ -23,8 +27,11 @@ window.addEventListener('DOMContentLoaded', () => {
   head.appendChild(link);
 
   const script = document.createElement('script');
-  script.src = 'file:' + Dir + '/soundcloudShuffleLikes.js';
-  head.appendChild(script);
+  script.src = 'atom://' + Dir + '/soundcloudShuffleLikes.js';
+  script.id = 'customJS';
+  script.type = 'text/javascript';
+
+  sleep(1000).then(() => {    head.appendChild(script);  });
 
   //const script2 = document.createElement('script');
   //script2.src = 'file:' + Dir + '/playlistButtonsV3.js';
