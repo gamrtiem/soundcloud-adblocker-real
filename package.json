@@ -1,9 +1,9 @@
 {
-  "name": "my-electron-app",
+  "name": "icebro-soundcloud-adblocker",
   "version": "1.0.0",
-  "description": "Hello World!",
+  "description": "an electron wrapped adblocked soundcloud because i wasnt happy with the other options !!",
   "main": "main.js",
-  "author": "Jane Doe",
+  "author": "icebrah",
   "license": "MIT",
   "packageManager": "yarn@4.3.1",
   "devDependencies": {
