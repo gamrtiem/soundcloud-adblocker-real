@@ -11,6 +11,15 @@
 .sc-classic .banner.m-get_heard {
     display: none !important;
 }
+.creatorSubscriptionsButton {
+    display: none !important;
+}
+.sc-classic .headerMenu__link.m-highlight, .sc-classic .headerMenu__link.m-highlight:focus, .sc-classic .headerMenu__link.m-highlight:hover {
+    display: none !important;
+}
+.l-fluid-fixed .l-sidebar-right .sidebarModule.mobileApps {
+    display: none !important;
+}
 /* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
@@ -340,4 +349,125 @@ a.sc-link-light {
 .sc-classic .newItemBadge.newItems__some {
     /* notif color */
     background: #F3D2F7 !important;
+}
+.sc-classic .profileMenu .headerMenu__link {
+    /* drop down thing when you click profile */
+    color: #eeeeee !important;
+    background-color: #2d2d2d !important;
+}
+.sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
+    /* hover over thing in menu when you click  */
+    background-color: #1d1d1d !important;
+}
+
+/*profile menu evilness*/
+.sc-classic .m-light .profileMenu__profile:after, .sc-classic .m-light .profileMenu__likes:after, .sc-classic .m-light .profileMenu__sets:after, .sc-classic .m-light .profileMenu__stations:after, .sc-classic .m-light .profileMenu__following:after, .sc-classic .m-light .profileMenu__friends:after, .sc-classic .m-light .profileMenu__trackManager:after, .sc-classic .m-light .profileMenu__distribute:after {
+    filter: opacity(0.1) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee) drop-shadow(0 0 0 #eeeeee);
+}
+/* border stuff for profile dropdown */
+.sc-classic .headerMenu.m-light {
+    border: none !important;
+    background-color: none !important;
+}
+/* volume slider */
+.sc-classic .volume__sliderProgress, .sc-classic .volume__sliderHandle{
+    background-color: #F3D2F7 !important;
+}
+.sc-classic .volume__sliderWrapper:after, .sc-classic .volume__sliderWrapper:before {
+    border-color: transparent transparent #2d2d2d #2d2d2d;
+}
+.sc-classic .volume.expanded .volume__sliderWrapper {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .volume .volume__sliderWrapper {
+    background-color: #2d2d2d !important;
+}
+/* weird border thing on the bottom bar */ 
+.playbackSoundBadge {
+    border-radius: 0px !important;
+}
+/* notif thingey when upload from artist */ 
+.sc-classic .artistShortcutTile__badge {
+    filter: opacity(0.2) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7);
+
+}
+/* links visited */
+a, a:visited {
+    color: #E382C9;
+}
+/* why is there a 1px border on the right */
+.sc-classic .l-listen-wrapper .l-about-rows {
+    border: none !important;
+}
+.sc-border-light-top {
+    border-top: 1px solid #2d2d2d;
+}
+.sc-classic .paging-eof:before {
+    background: none !important;
+}
+/* color follow symbol */
+.sc-button-small.sc-button-selected.sc-button-follow.sc-button-icon-light:before, .sc-button-small.sc-button-selected.sc-button-follow:before {
+    filter: opacity(0.1) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7) drop-shadow(0 0 0 #F3D2F7);   
+}
+/* priv label recolor */ 
+.sc-label.sc-label-private {
+    background-color: #E382C9 !important;
+}
+/* compact list lighter grey */ 
+.sc-classic .compactTrackListItem__number, .sc-classic .compactTrackListItem__trackTitle {
+    color: #999 !important
+}
+.sc-classic .compactTrackListItem__user {
+    color: #eeeeee !important;
+}
+.sc-classic .compactTrackList {
+    border: none !important;
+}
+.sc-classic .compactTrackListItem.clickToPlay.active, .sc-classic .compactTrackListItem.clickToPlay:focus, .sc-classic .compactTrackListItem.clickToPlay:hover {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .compactTrackListItem.clickToPlay.active .compactTrackListItem__additional, .sc-classic .compactTrackListItem.clickToPlay:focus .compactTrackListItem__additional, .sc-classic .compactTrackListItem.clickToPlay:hover .compactTrackListItem__additional {
+    background: linear-gradient(90deg,#2d2d2d,#1d1d1d 17px);
+}
+/* other dropdown :( */
+.sc-classic .headerMenu.m-light {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .m-light .headerMenu__link, .sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
+    color: #eeeeee !important;
+}
+.sc-classic .m-light .headerMenu__list {
+    border-color: #1d1d1d !important;
+}
+/* notif box */ 
+.sc-classic .dropdownContent__container {
+    background-color: #2d2d2d !important;
+    border: none !important;
+}
+.sc-classic .dropdownContent__header {
+    border-bottom: none !important;
+}
+.sc-classic .notificationBadge__main {
+    color: #999 !important;
+}
+.sc-text {
+    color: #eeeeee !important;
+}
+/* you really dont need a border for the mailbox */
+.sc-classic .dropdownContent__main {
+    border-bottom: none !important;
+}
+/* input */
+input, select, textarea {
+    background-color: #2d2d2d !important;
+}
+/* gallery arrows */ 
+.sc-classic .tileGallery__sliderButton:after {
+    border-right: 1px solid #eeeeee !important;
+    border-top: 1px solid #eeeeee !important;
+}
+/* artist popup arrow */
+.sc-classic .dialog__arrow {
+    background: #2d2d2d !important;
+    border: 1px solid #2d2d2d !important;
 }
