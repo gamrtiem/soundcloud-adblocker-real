@@ -30,12 +30,9 @@ async function createWindow() {  // Create the browser window.
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      webviewTag: true,
-      webSecurity: false, //scary !
-      webSecurity: false, //scary !
-      webSecurity: false, //scary !
-      webSecurity: false, //scary !
-      additionalArguments: [`--customValue=${__dirname}`],
+      //webviewTag: true,
+      additionalArguments: [`--customValue=${__dirname}`]
+
     }
   })
 

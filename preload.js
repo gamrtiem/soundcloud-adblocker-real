@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   link.id = "customCSS";
   link.rel = 'stylesheet';
   link.type = 'text/css';
-  link.href = 'file://' + Dir + '/main.css';
+  link.href = 'atom://' + Dir + '/main.css';
   link.media = 'all';
   head.appendChild(link);
 
