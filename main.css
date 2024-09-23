@@ -20,6 +20,9 @@
 .l-fluid-fixed .l-sidebar-right .sidebarModule.mobileApps {
     display: none !important;
 }
+.historyModule { /* fix bottom of history beign too low down */
+    padding-bottom: 80px;
+}
 /* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
