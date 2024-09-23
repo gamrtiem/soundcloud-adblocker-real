@@ -31,14 +31,18 @@
             btnShuffle.onclick = function(){ setupLoad(this); };
             btnShuffle.scrolling = false;
             btnShuffle.interval = 0;
-
-            btnShuffle.className = 'bhackel-shuffle-likes sc-button sc-button-large';
+            
+            btnShuffle.className = 'icebro-theme-class sc-button sc-button-large';
+            btnShuffle.style = "margin-bottom: 20px; width: 100%;";
             btnShuffle.pageType = "Likes";
             // Check if top bar has loaded
             let collectionTop = document.querySelector('.streamSidebar');
             if (collectionTop) {
                 // Insert the button above the grid of tracks
                 collectionTop.insertBefore(btnShuffle, collectionTop.children[1]);
+                
+                //collectionTop.insertAdjacentHTML("afterbegin", '<h3>This is the text which has been inserted by JS</h3>');
+
             } else {
                 setTimeout(insertButtonLoop, 1000);
             }
@@ -53,6 +57,14 @@
     function setupLoad(btn) {
         // log in the console 
         console.log('setupLoad');
+
+        // open a new overlay thingey 
+        //dropdownContent__container
+        let overlay = document.querySelector('.sc-classic');
+        //overlay.insertAdjacentHTML("afterbegin", '<div class="dropdownContent__container icebro_checker">This is the text which has been inserted by JS</div>');
+        overlay.insertAdjacentHTML("beforeend", '<div class="dropdownMenu g-z-index-header-menu" style="outline: none; width: 75%; min-height: auto; position: fixed; top: 46px; left: 12.5%;" tabindex="-1" id="dropdown-button-145"> <div> <div> <div class="dropdownContent__container sc-py-1x" style="padding: 8px 16px; height: 400px;"> <center> theme stuff !!! </center> </div> </div> </div> </div>');
+
+
     }
 
     /* Scrolls the queue down, ensuring that the queue is open by opening it

@@ -31,7 +31,13 @@ window.addEventListener('DOMContentLoaded', () => {
   script.id = 'customJS';
   script.type = 'text/javascript';
 
+  const script2 = document.createElement('script');
+  script2.src = 'atom://' + Dir + '/soundcloudThemes.js';
+  script2.id = 'customJS';
+  script2.type = 'text/javascript';
+
   sleep(1000).then(() => {    head.appendChild(script);  });
+  sleep(1000).then(() => {    head.appendChild(script2);  });
 
   //const script2 = document.createElement('script');
   //script2.src = 'file:' + Dir + '/playlistButtonsV3.js';

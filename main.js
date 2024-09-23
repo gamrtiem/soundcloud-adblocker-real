@@ -26,6 +26,7 @@ protocol.registerSchemesAsPrivileged([
 
 async function createWindow() {  // Create the browser window.
   const mainWindow = new BrowserWindow({
+    icon: __dirname + '/insanity.png',
     width: 1200,
     height: 600,
     webPreferences: {
