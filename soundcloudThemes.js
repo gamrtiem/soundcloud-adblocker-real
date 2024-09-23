@@ -23,6 +23,7 @@
         let url = window.location.href;
         url = url.split('?')[0];
         let btnShuffle = document.querySelector('.icebro-theme-class');
+        let isOpen = false;
 
         // Check if button does not exist already, and that user is on likes or a playlist
         if (!btnShuffle && (url.includes("/"))) {
@@ -55,6 +56,7 @@
      *  likes, then starts the scrolling loop. Or it stops the loop from running.
      */
     function setupLoad(btn) {
+        isOpen = true;
         // log in the console 
         console.log('setupLoad');
 
