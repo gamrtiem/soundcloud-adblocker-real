@@ -23,6 +23,37 @@
 .historyModule { /* fix bottom of history beign too low down */
     padding-bottom: 80px;
 }
+/*width stuff */
+.l-container {
+    margin: 0 !important;
+
+}
+.sc-classic .playableTile {
+    width: 173px !important;
+}
+.sc-classic .l-container {
+    width: calc(95% - 1px) !important;
+}
+.sc-classic .userBadgeListItem {
+    width: 173px !important;
+}
+.tileGallery.m-fourPanels .tileGallery__sliderPanelSlide {
+    flex: 0 0 0% !important; 
+}
+.sc-classic .l-container.l-fullwidth {
+    width: 100% !important;
+}
+.sc-classic .playbackTimeline__progressWrapper {
+    margin: 13px 10px 0px 10px !important;
+}
+
+
+
+
+
+
+
+
 /* personal theme stuff */
 body.sc-classic {
     background: #1d1d1d !important;
@@ -145,13 +176,13 @@ a.sc-link-dark:hover, a.sc-link-medium:hover {
     display: inline !important; position: relative !important; top: -48px !important; width: 100% !important ;
 }
 .playbackTimeline__timePassed {
-    position: relative !important; top: 35px !important; color: #F3D2F7 !important; left: -2.4% !important
+    position: relative !important; top: 35px !important; color: #F3D2F7 !important; left: calc(0% + -13px) !important;
 }
 .sc-classic .playbackTimeline__duration {
     top: -44px !important;
 }
 .sc-classic .playbackTimeline__duration {
-    display: block !important; position: relative !important; color: #eeeeee !important; left: 98% !important;
+    display: block !important; position: relative !important; color: #eeeeee !important; left: calc(100% - 36px) !important;
 }
 .sc-classic .playbackTimeline__progressBar {
     height: 5px !important; background-color: #F3D2F7 !important;
@@ -512,4 +543,13 @@ input, select, textarea {
 }
 .sc-classic .keyboardShortcuts__shortcutsGroup>dl>dt>kbd>kbd {
     background: #2d2d2d !important;
+}
+.sc-background-light {
+    background: #2d2d2d !important;
+}
+.sc-classic .tagInput__wrapper {
+    background-color: #1d1d1d !important;
+}
+.sc-classic .tokenInput__wrapper {
+    border: none;
 }
