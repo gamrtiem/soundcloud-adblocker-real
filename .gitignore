@@ -6,3 +6,5 @@ out/
 .yarn/install-state.gz
 
 yarn.lock
+
+engine.bin

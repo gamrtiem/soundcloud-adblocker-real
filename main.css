@@ -474,3 +474,42 @@ input, select, textarea {
     background: #2d2d2d !important;
     border: 1px solid #2d2d2d !important;
 }
+/* search thingey */
+.sc-classic .g-nav-item.active>.g-nav-link {
+    text-shadow: 0 1px 0 #E382C9 !important;
+}
+.sc-classic .searchOptions__navigationItem.active {
+    background: #F3D2F7 !important;
+}
+.sc-classic .g-nav-item.active>.g-nav-link {
+    color: #2d2d2d !important;
+}
+.sc-classic .searchOptions__navigationItem.active:after {
+    border-left-color: #F3D2F7 !important;
+}
+.sc-classic .g-nav-item.active>.g-nav-link {
+    background-position: 5px 3px !important;
+}
+.sc-classic .g-nav-item>.g-nav-link {
+    background-position: 5px -28px !important;
+}
+.sc-classic .searchTitle__text {
+    border-bottom: 3px solid #f2f2f2;
+}
+/* playing comments under waveform */
+.sc-classic .commentPopover__username:before {
+    background-image: linear-gradient(#F3D2F7,#e382c903) !important;
+}
+.sc-classic .commentPopover__username, .sc-classic a.commentPopover__username:hover, .sc-classic a.commentPopover__username:visited {
+    color: #F3D2F7 !important;   
+}
+/* popup */
+.sc-classic .modal__modal {
+    background-color: #1d1d1d !important;
+}
+.sc-classic .modal.modalWhiteout {
+    background-color: hsla(0, 0%, 13%, 0.9);
+}
+.sc-classic .keyboardShortcuts__shortcutsGroup>dl>dt>kbd>kbd {
+    background: #2d2d2d !important;
+}
