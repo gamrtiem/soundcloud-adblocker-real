@@ -32,7 +32,7 @@
     width: 173px !important;
 }
 .sc-classic .l-container {
-    width: calc(95% - 1px) !important;
+    width: calc(100vw - 75px)!important;
 }
 .sc-classic .userBadgeListItem {
     width: 173px !important;
@@ -46,9 +46,11 @@
 .sc-classic .playbackTimeline__progressWrapper {
     margin: 13px 10px 0px 10px !important;
 }
-
-
-
+@media (max-width: 1079px) {
+    .sc-classic .l-container {
+        padding: 0 30px 46px 21px !important;
+    }
+}
 
 
 
