@@ -29,13 +29,16 @@
 
 }
 .sc-classic .playableTile {
-    width: 173px !important;
+    width: 130px !important;
+    padding-bottom: 50px !important;
 }
 .sc-classic .l-container {
     width: calc(100vw - 75px)!important;
 }
 .sc-classic .userBadgeListItem {
-    width: 173px !important;
+    width: 130px !important;
+    height: 130px !important;
+    padding-bottom: 50px !important;
 }
 .tileGallery.m-fourPanels .tileGallery__sliderPanelSlide {
     flex: 0 0 0% !important; 
@@ -534,7 +537,7 @@ input, select, textarea {
     background-image: linear-gradient(#F3D2F7,#e382c903) !important;
 }
 .sc-classic .commentPopover__username, .sc-classic a.commentPopover__username:hover, .sc-classic a.commentPopover__username:visited {
-    color: #F3D2F7 !important;   
+    color: #F3D2F7 !important;
 }
 /* popup */
 .sc-classic .modal__modal {
@@ -566,4 +569,25 @@ input, select, textarea {
 }
 .sc-classic .tabs__headingContainer, .sc-classic .tabs__tabs {
     background: none !important;
+}
+.sc-input {
+    border: 1px solid #1d1d1d !important;
+}
+.sc-classic .playableTile__mainHeading {
+    font-size: 13px !important;
+}
+.sc-classic .tokenInput__wrapper {
+    border: 1px solid #1d1d1d !important;
+}
+.soundActions {
+    background-color: #1d1d1d;
+}
+.sc-buylink, .sc-buylink:visited {
+    color: #F3D2F7 !important;
+}
+.commentItem__creator, .commentItem__creatorLink {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper:after {
+    background: linear-gradient(hsla(0,0%,100%,0),#1d1d1d) !important;
 }
