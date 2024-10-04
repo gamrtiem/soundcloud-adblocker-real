@@ -555,3 +555,15 @@ input, select, textarea {
 .sc-classic .tokenInput__wrapper {
     border: none;
 }
+.getHeard__container {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .audibleEditForm__form {
+    background-color: #2d2d2d !important;
+}
+.sc-classic .audibleEditForm__audio {
+    background-color: #1d1d1d !important;
+}
+.sc-classic .tabs__headingContainer, .sc-classic .tabs__tabs {
+    background: none !important;
+}
